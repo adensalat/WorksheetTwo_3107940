@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>General Knowledge Quiz</h1>
+        </header>
+
+        <div id="introduction">
+            <h2>Welcome to the Quiz!</h2>
+            <p>Please enter your name:</p>
+            <input type="text" id="userName" />
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+        <div id="quiz" class="hidden">
+            <div id="question-container"></div>
+            <div class="buttons">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+
+        <div id="feedback" class="hidden">
+            <h2>Results</h2>
+            <p id="resultMessage"></p>
+        </div>
+
+        
+    </div>
+    <footer>
+        <p>Quiz by: Aden Ibrahim Salat, 3107940, maheribra999@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
