@@ -20,8 +20,16 @@ public class ConversionsTest {
 
     @Test
     public void testFahrenheitToCelsius() {
-        
-    }
+    	Conversions conversions = new Conversions();
+        // Test case 1: 32 degrees Fahrenheit should be 0 degrees Celsius
+        assertEquals(0.0, conversions.fahrenheitToCelsius(32), 0.001);
+
+        // Test case 2: 212 degrees Fahrenheit should be 100 degrees Celsius
+        assertEquals(100.0, conversions.fahrenheitToCelsius(212), 0.001);
+
+        // Test case 3: -40 degrees Fahrenheit should be -40 degrees Celsius
+        assertEquals(-40.0, conversions.fahrenheitToCelsius(-40), 0.001);
+     }
 
     @Test
     public void testMilesToKilometer() {

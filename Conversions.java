@@ -7,9 +7,8 @@ public class Conversions {
         return (celsius * 9 / 5) + 32;
     }
 
-    public double fahrenheitToCelsius(double fahrenheit) {
-        // Method stub
-        return 0.0;
+	public double fahrenheitToCelsius(double fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
     }
 
     public double milesToKilometer(double miles) {
