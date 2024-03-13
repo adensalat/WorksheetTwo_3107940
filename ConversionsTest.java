@@ -33,13 +33,30 @@ public class ConversionsTest {
 
     @Test
     public void testMilesToKilometer() {
-        
+        Conversions conversions = new Conversions();
+        // Test case 1: 1 mile should be approximately 1.60934 kilometers
+        assertEquals(1.60934, conversions.milesToKilometer(1), 0.001);
+
+        // Test case 2: 10 miles should be approximately 16.0934 kilometers
+        assertEquals(16.0934, conversions.milesToKilometer(10), 0.001);
+
+        // Test case 3: 0 miles should be 0 kilometers
+        assertEquals(0.0, conversions.milesToKilometer(0), 0.001);
     }
 
     @Test
     public void testKilometerToMiles() {
-        
+        Conversions conversions = new Conversions();
+        // Test case 1: 1 kilometer should be approximately 0.621371 miles
+        assertEquals(0.621371, conversions.kilometerToMiles(1), 0.001);
+
+        // Test case 2: 10 kilometers should be approximately 6.21371 miles
+        assertEquals(6.21371, conversions.kilometerToMiles(10), 0.001);
+
+        // Test case 3: 0 kilometers should be 0 miles
+        assertEquals(0.0, conversions.kilometerToMiles(0), 0.001);
     }
+
 
     @Test
     public void testUpperCaseToLowerCase() {

@@ -11,14 +11,12 @@ public class Conversions {
         return (fahrenheit - 32) * 5 / 9;
     }
 
-    public double milesToKilometer(double miles) {
-        // Method stub
-        return 0.0;
+	public double milesToKilometer(double miles) {
+        return miles * 1.60934;
     }
 
     public double kilometerToMiles(double kilometer) {
-        // Method stub
-        return 0.0;
+        return kilometer / 1.60934;
     }
 
     public String upperCaseToLowerCase(String input) {
