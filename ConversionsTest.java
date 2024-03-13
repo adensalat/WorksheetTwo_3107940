@@ -60,13 +60,30 @@ public class ConversionsTest {
 
     @Test
     public void testUpperCaseToLowerCase() {
-        
+        Conversions conversions = new Conversions();
+        // Test case 1: Convert all uppercase letters to lowercase
+        assertEquals("hello", conversions.upperCaseToLowerCase("HELLO"));
+
+        // Test case 2: Convert a mix of uppercase and lowercase letters to lowercase
+        assertEquals("hello world", conversions.upperCaseToLowerCase("HELLO World"));
+
+        // Test case 3: Convert an empty string
+        assertEquals("", conversions.upperCaseToLowerCase(""));
     }
 
     @Test
     public void testLowerCaseToUpperCase() {
-        
+        Conversions conversions = new Conversions();
+        // Test case 1: Convert all lowercase letters to uppercase
+        assertEquals("HELLO", conversions.lowerCaseToUpperCase("hello"));
+
+        // Test case 2: Convert a mix of uppercase and lowercase letters to uppercase
+        assertEquals("HELLO WORLD", conversions.lowerCaseToUpperCase("Hello World"));
+
+        // Test case 3: Convert an empty string
+        assertEquals("", conversions.lowerCaseToUpperCase(""));
     }
+
    
 }
 

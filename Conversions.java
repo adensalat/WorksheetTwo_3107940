@@ -20,13 +20,11 @@ public class Conversions {
     }
 
     public String upperCaseToLowerCase(String input) {
-        // Method stub
-        return null;
+        return input.toLowerCase();
     }
 
     public String lowerCaseToUpperCase(String input) {
-        // Method stub
-        return null;
+        return input.toUpperCase();
     }
 }
 
